@@ -1,0 +1,47 @@
+
+
+
+  
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+
+  .carousel-track img {
+    width: 19%;
+    height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid rgb(245, 245, 246);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Reverse the direction for the second carousel */
+  .carousel-container.reverse .carousel-track {
+    animation-direction: reverse;
+  }
+
+  .neon-header {
+    padding: 20px 0;
+    background-color: #000;
+    position: relative;
+    box-shadow: 1px 0px 25px #ff1a1a; /* Updated to red */
+  }
+  
+
+  
